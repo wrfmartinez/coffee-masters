@@ -17,7 +17,7 @@
     </nav>
     <main>
       <section class="checkout">
-        <article class="checkout-info">
+        <article class="shopping-cart card">
           <h2 class="card-header">ITEMS</h2>
           <ul class="checkout-items">
             <li>
@@ -37,18 +37,24 @@
         </article>
 
         <article class="customer-info">
-          <div class="customer-name">
+          <div class="customer-name card">
             <h2 class="card-header">NAME</h2>
-            <label for="name" class="input-label">Name for Order</label>
-            <input type="text" id="name" class="name-input" placeholder="e.g Ford Prefect">
+            <fieldset>
+              <legend class="input-label">Name for Order</legend>
+              <input type="text" id="name" class="name-input" placeholder="e.g Ford Prefect">
+            </fieldset>
           </div>
 
-          <div class="payment-info">
+          <div class="payment-info card">
             <h2 class="card-header">PAYMENT</h2>
-            <label for="card-number">Card Number</label>
-            <input type="text" id="card-number" class="card-number-input">
-            <label for="card-number">CCV Number</label>
-            <input type="text" id="ccv-number" class="ccv-input">
+            <fieldset>
+              <legend class="input-label">Card Number</legend>
+              <input type="text" id="card-number" class="card-number-input">
+            </fieldset>
+            <fieldset>
+              <legend class="input-label">CCV Number</legend>
+              <input type="text" id="ccv-number" class="ccv-input">
+            </fieldset>
           </div>
         </article>
       </section>
