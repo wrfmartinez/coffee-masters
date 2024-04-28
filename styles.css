@@ -35,6 +35,7 @@ main {
   display: flex;
   justify-content: center;
   gap: 50px;
+  margin-top: 40px;
 }
 
 .customer-info {
@@ -130,4 +131,39 @@ input {
   background-color: transparent;
   border: none;
   outline-width: 0;
+}
+
+.checkout-total-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.label-divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  width: 25%;
+}
+
+.subtotal-label, .tax-label, .total-label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.total-label {
+  width: 25%;
+  font-weight: bold;
+}
+
+.order-btn {
+  width: 90%;
+  padding: 13px;
+  font-size: 15px;
+  background-color: #dbb58c;
+  border-radius: 30px;
+  border: none;
 }
