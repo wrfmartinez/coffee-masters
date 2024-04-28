@@ -6,7 +6,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: #EFEFEF;
   margin: 0;
-  height: 100dvh;
 }
 
 nav {
@@ -14,14 +13,12 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 5px;
-  grid-area: nav-bar;
   background-color: #45291b;
   color: #F9F2C5;
   padding: 10px;
 }
 
 main {
-  grid-area: body;
   padding: 25px;
 }
 
@@ -40,6 +37,12 @@ main {
   gap: 50px;
 }
 
+.customer-info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
 .card {
   background-color: #EBE1D6;
   border-radius: 3px;
@@ -48,15 +51,25 @@ main {
   width: 600px;
 }
 
+.customer-name.card, .payment-info.card {
+  padding-bottom: 20px;
+}
+
 .card-header {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   color: #7d5427;
+  padding-top: 5px;
+  margin-bottom: 20px;
 }
 
 .checkout-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   list-style: none;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .checkout-items li {
@@ -104,8 +117,17 @@ main {
   margin: 0 0 4px 33px;
 }
 
-.grid-container {
-  grid-template-areas:
-  "nav-bar nav-bar"
-  "body body";
+fieldset {
+  color: #7d5427;
+  font-size: 13px;
+  border: 1px solid #7d5427;
+  border-radius: 50px;
+  padding-left: 40px;
+  margin-bottom: 5px;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  outline-width: 0;
 }
