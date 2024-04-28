@@ -34,18 +34,74 @@ main {
   font-size: 16px;
 }
 
-.card {
-  background-color: #EBE1D6;
-  border-radius: 3px;
-  box-shadow: 0 2px 15px 1px rgb(0, 0, 0, 0.15);
-  padding: 0 15px 0 15px;
-  width: 600px;
-}
-
 .checkout {
   display: flex;
   justify-content: center;
   gap: 50px;
+}
+
+.card {
+  background-color: #EBE1D6;
+  border-radius: 3px;
+  box-shadow: 0 2px 15px 1px rgb(0, 0, 0, 0.15);
+  padding: 0 20px 5px 20px;
+  width: 600px;
+}
+
+.card-header {
+  font-size: 14px;
+  font-weight: 500;
+  color: #7d5427;
+}
+
+.checkout-items {
+  list-style: none;
+  padding: 0;
+}
+
+.checkout-items li {
+  border-bottom: 1.5px solid #dcb68c;
+}
+
+.checkout-items li:last-child {
+  border-bottom: none;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-right: 50px;
+  height: 35px;
+}
+
+.item-name {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.quantity {
+  font-size: 14px;
+  color: #575757;
+  margin-right: 15px;
+}
+
+.item-price {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.item-customization-container {
+  margin-bottom: 15px;
+}
+
+.item-customization {
+  color: #7d5427;
+  font-size: 13px;
+  margin: 0 0 4px 33px;
 }
 
 .grid-container {
